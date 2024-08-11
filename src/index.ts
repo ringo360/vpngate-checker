@@ -5,7 +5,11 @@ import fs from 'fs/promises';
 
 const app = new Hono();
 
+//EDIT ME
 const ips_file = 'ips.json';
+const checkIntervalSec = 60 * 10; //60sec * 10min
+//===============
+consola.info(`Interval: ${checkIntervalSec}sec`);
 
 class IPsList {
 	private ips: string[];
@@ -47,11 +51,6 @@ class IPsList {
 		}
 	}
 }
-
-//*Edit me
-const checkIntervalSec = 60 * 10; //60sec * 10min
-consola.info(`Interval: ${checkIntervalSec}sec`);
-
 const Manager = new IPsList();
 
 async function main() {
