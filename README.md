@@ -4,7 +4,8 @@
 
 あらかじめ定義された秒数ごとにリストを取得します。
 
-> [!TIP] > `src/index.ts:10`から Interval を編集できます。
+> [!NOTE]
+> `src/index.ts:10`から Interval を編集できます。
 >
 > ```ts
 > const checkIntervalSec = 60 * 10; //60sec * 10min
